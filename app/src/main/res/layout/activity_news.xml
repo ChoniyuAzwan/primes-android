@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.choniyuazwan.primes.NewsActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Great Internet Mersenne Prime Search"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/colorBlack"
+            android:text="
+        GIMPS was founded in 1996 by George Woltman. The software ran on Intel i386 systems using hand-tuned assembly code for the critical calculations, resulting in highly optimized Lucas-Lehmer code.\n\n
+        It wasn't long before GIMPS had it's first discovery in November of that same year, showing the effectiveness of distributed computing in harnessing spare computer cycles in a coordinated effort.\n\n
+        As efficient as the software itself was, the early years of GIMPS involved a manual process using emails to request work assignments and then send the results back. As the project grew, a more efficient system was needed and Scott Kurowski responded to that need with the introduction of PrimeNet through his company Entropia, a pioneer in the early days of distributed computing projects. Without Scott's invaluable contribution, the ability to manage thousands of volunteers and millions of work assignments would not have been possible. PrimeNet paved the way for the future growth of the project as a whole.\n\n
+        With the solid foundation of PrimeNet in place, George continued his focus on improving the core calculations of Prime95. As new Intel and AMD processors were introduced, George worked with the new instruction sets and timings to increase the performance. The core of the program is now able to optimize itself to work at peak efficiency on all modern CPU's, but also still finds a home on many older generation systems."
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Largest Known Prime, 49th Mersenne Prime"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/colorBlack"
+            android:text="
+        January 7, 2016 — GIMPS celebrated its 20th anniversary with the discovery of the largest known prime number, 2^74,207,281-1. Curtis Cooper, one of many thousands of GIMPS volunteers, used one of his university's computers to make the find. The prime number, also known as M74207281, is calculated by multiplying together 74,207,281 twos then subtracting one. It has 22,338,618 digits, almost 5 million digits longer than the previous record prime number.\n\n
+        While prime numbers are important for cryptography, this prime is too large to currently be of practical value. However, the search itself does have several practical benefits. Historically, searching for Mersenne primes has been used as a test for computer hardware. Earlier this month, GIMPS' prime95 software and members of a German computing community uncovered a flaw in Intel's latest Skylake CPUs. Prime95 has also discovered hardware problems in many individual's PCs.\n\n
+        To prove there were no errors in the prime discovery process, the prime was independently verified using both different programs and different hardware. Andreas Hoglund and David Stanfill each verified the prime using the CUDALucas software running on NVidia Titan GPUs. David Stanfill also verified using ClLucas on an AMD Fury GPU. Finally, Serge Batalov ran Ernst Mayer's MLucas software on a 18-core server to verify the prime.\n\n
+        Dr. Cooper is a professor at the University of Central Missouri. This is the fourth record prime for Dr. Cooper and his university. Their first record prime was discovered in 2005, eclipsed by their second record in 2006. Dr. Cooper lost the record in 2008, but reclaimed it in 2013, and improved the record with this new prime. The primality proof took a month of computing on a PC with an Intel I7-4790 CPU.  Dr. Cooper and the University of Central Missouri is the largest contributor of CPU time to the GIMPS project. The discovery is eligible for a $3,000 GIMPS research discovery award.\n\n
+        While Dr. Cooper's computer found the record prime, the discovery would not have been possible without all the GIMPS volunteers that sifted through numerous non-prime candidates. GIMPS founder George Woltman, PrimeNet creator Scott Kurowski, Primenet administrator Aaron Blosser, thank and congratulate all the GIMPS members that made this discovery possible. To recognize all those that contributed to this discovery, official credit goes to Cooper, Woltman, Kurowski, Blosser, et al.\n\n
+        The new prime number is a member of a special class of extremely rare prime numbers known as Mersenne primes. Mersenne primes were named for the French monk Marin Mersenne, who studied these numbers more than 350 years ago. There are only 49 known Mersenne primes. GIMPS, founded in 1996, has discovered the last 15 Mersenne primes. Volunteers download a free program to search for these primes with a cash award offered to anyone lucky enough to find a new prime. Prof. Chris Caldwell maintains an authoritative web site on the largest known primes as well an excellent history of Mersenne primes.\n\n
+        Interestingly, Dr. Cooper's computer reported the prime to the server on September 17, 2015. However, a bug prevented the email notification from being sent. The new prime remained unnoticed until routine database maintenance took place months later. The official discovery date is the day a human took note of the result. This is in keeping with tradition as M4253 is considered never to have been the largest known prime number because Alexander Hurwitz in 1961 read his computer printout backwards and saw M4423 was prime seconds before seeing that M4253 was also prime."
+            />
+    </LinearLayout>
+</ScrollView>

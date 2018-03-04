@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_computation"
+            android:title="Computation"/>
+        <item
+            android:id="@+id/nav_documentation"
+            android:title="Documentation" />
+        <item
+            android:id="@+id/nav_about"
+            android:title="About" />
+    </group>
+</menu>

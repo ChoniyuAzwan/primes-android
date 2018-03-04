@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.choniyuazwan.primes.TheoremActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Fundamental Theorem of Arithmetic"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/colorBlack"
+            android:text="
+        The crucial importance of prime numbers to number theory and mathematics in general stems from the fundamental theorem of arithmetic, which states that every integer larger than 1 can be written as a product of one or more primes in a way that is unique except for the order of the prime factors. Primes can thus be considered the “basic building blocks” of the natural numbers. For example:\n\n
+        23244 = 2 · 2 · 3 · 13 · 149 = 2^2 · 3 · 13 · 149. (2^2 denotes the square or second power of 2.)\n\n
+        As in this example, the same prime factor may occur multiple times. A decomposition:\n\n
+        n = p1 · p2 · ... · pt\n\nof a number n into (finitely many) prime factors p1, p2, ... to pt is called prime factorization of n. The fundamental theorem of arithmetic can be rephrased so as to say that any factorization into primes will be identical except for the order of the factors. So, albeit there are many prime factorization algorithms to do this in practice for larger numbers, they all have to yield the same result.\n\n
+        If p is a prime number and p divides a product ab of integers, then p divides a or p divides b. This proposition is known as Euclid's lemma. It is used in some proofs of the uniqueness of prime factorizations.\n\n
+        There are infinitely many prime numbers. Another way of saying this is that the sequence\n\n
+        2, 3, 5, 7, 11, 13, ...\n\nof prime numbers never ends. This statement is referred to as Euclid's theorem in honor of the ancient Greek mathematician Euclid, since the first known proof for this statement is attributed to him. Many more proofs of the infinitude of primes are known, including an analytical proof by Euler, Goldbach's proof based on Fermat numbers, Furstenberg's proof using general topology, and Kummer's elegant proof."
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Euclid's Proof"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/colorBlack"
+            android:text="
+        Euclid's proof (Book IX, Proposition 20) considers any finite set S of primes. The key idea is to consider the product of all these numbers plus one:"
+            />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/euclid"/>
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/colorBlack"
+            android:text="
+            Like any other natural number, N is divisible by at least one prime number (it is possible that N itself is prime).\n\n
+        None of the primes by which N is divisible can be members of the finite set S of primes with which we started, because dividing N by any one of these leaves a remainder of 1. Therefore, the primes by which N is divisible are additional primes beyond the ones we started with. Thus any finite set of primes can be extended to a larger finite set of primes.\n\n
+        It is often erroneously reported that Euclid begins with the assumption that the set initially considered contains all prime numbers, leading to a contradiction, or that it contains precisely the n smallest primes rather than any arbitrary finite set of primes. Today, the product of the smallest n primes plus 1 is conventionally called the nth Euclid number."
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Euler's Analytical Proof"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="40dp"/>
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/colorBlack"
+            android:text="
+        Euler's proof uses the partial sums of the reciprocals of primes,"/>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerInside"
+            android:src="@drawable/euler1"/>
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/colorBlack"
+            android:text="
+        For any arbitrary real number x, there exists a prime p for which this partial sum is bigger than x. This shows that there are infinitely many primes, because if there were finitely many primes the sum would reach its maximum value at the biggest prime rather than being unbounded. More precisely, the growth rate of S(p) is doubly logarithmic, as quantified by Mertens' second theorem. For comparison, the sum"/>
+
+        <ImageView
+            android:scaleType="centerInside"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/euler2"/>
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/colorBlack"
+            android:text="does not grow to infinity as n goes to infinity (see Basel problem). In this sense, prime numbers occur more often than squares of natural numbers. Brun's theorem states that the sum of the reciprocals of twin primes,"
+            />
+
+        <ImageView
+            android:scaleType="centerInside"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/euler3"/>
+
+        <TextView
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/colorBlack"
+            android:text="is finite. Because of Brun's theorem, it is not possible to use Euler's method to solve the twin prime conjecture, that there exist infinitely many twin primes."
+            />
+
+    </LinearLayout>
+</ScrollView>

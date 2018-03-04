@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.choniyuazwan.primes.RateActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="Determine N Rate Primes"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:layout_marginTop="30dp"
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Input N rates"
+            android:textAlignment="center"
+            android:textSize="20sp"/>
+
+        <EditText
+            android:textAlignment="center"
+            android:layout_marginTop="5dp"
+            android:textSize="20sp"
+            android:inputType="number"
+            android:maxLength="9"
+            android:id="@+id/etNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:id="@+id/btnFind"
+            android:onClick="find"
+            android:text="Submit"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Result"
+            android:layout_marginTop="30dp"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:textColor="@android:color/black"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvFind"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:textAlignment="center"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="@color/colorPantone">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/prime"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Documentation"
+            android:layout_marginBottom="20dp"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="40sp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/btnDefinition"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Definition"
+        android:textSize="25sp"
+        android:textColor="@android:color/black"/>
+
+    <Button
+        android:textColor="@android:color/black"
+        android:id="@+id/btnHistory"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="History"
+        android:textSize="25sp"/>
+
+    <Button
+        android:textColor="@android:color/black"
+        android:textAllCaps="false"
+        android:id="@+id/btnTheorem"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="Arithmetic Theorem"
+        android:textSize="25sp"/>
+
+    <Button
+        android:textColor="@android:color/black"
+        android:textAllCaps="false"
+        android:id="@+id/btnNews"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="News"
+        android:textSize="25sp"/>
+</LinearLayout>
